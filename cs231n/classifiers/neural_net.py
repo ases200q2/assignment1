@@ -66,6 +66,9 @@ class TwoLayerNet(object):
     W1, b1 = self.params['W1'], self.params['b1']
     W2, b2 = self.params['W2'], self.params['b2']
     N, D = X.shape
+    
+    
+    
 
     # Compute the forward pass
     scores = None
@@ -79,6 +82,9 @@ class TwoLayerNet(object):
     h2=np.dot(z1,W2)+b2
     scores=h2
     probs=np.exp(h2)/ np.sum(np.exp(h2), axis=1, keepdims=True)
+    
+    
+    
     #############################################################################
     #                              END OF YOUR CODE                             #
     #############################################################################
